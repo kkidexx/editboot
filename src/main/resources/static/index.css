@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #5cb85c;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0;
+    text-align: center; /* Centra el contenido */
+}
+
+li {
+    margin: 10px 0; /* Espaciado vertical entre los elementos de la lista */
+}
+
+a {
+    color: #5cb85c;
+    text-decoration: none;
+    font-weight: bold; /* Hace que los enlaces sean más destacados */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+a:hover {
+    color: #4cae4c; /* Cambia el color al pasar el mouse */
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}

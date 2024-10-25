@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Entidad2</title>
+    <link rel="stylesheet" th:href="@{/ednitadestyles.css}" />
+
+</head>
+<body>
+<h1>Lista de Entidad2</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Cantidad</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="entidad2 : ${entidad2}">
+        <td th:text="${entidad2.idEntidad2}"></td>
+        <td th:text="${entidad2.cantidad}"></td>
+        <td>
+            <a th:href="@{/entidad2/editar/{id}(id=${entidad2.idEntidad2})}">Editar</a> |
+            <a th:href="@{/entidad2/eliminar/{id}(id=${entidad2.idEntidad2})}">Eliminar</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<a href="/entidad2/crear">Crear nueva Entidad2</a>
+</body>
+</html>

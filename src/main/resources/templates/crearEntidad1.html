@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Entidad1</title>
+    <link rel="stylesheet" th:href="@{/crearstyles.css}" />
+
+</head>
+<body>
+<h1>Crear Entidad1</h1>
+<form th:action="@{/entidad1}" th:object="${entidad1}" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" th:field="*{nombre}">
+    <br>
+    <label for="precio">Precio:</label>
+    <input type="number" step="0.01" id="precio" th:field="*{precio}">
+    <br>
+    <button type="submit">Guardar</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Entidad4</title>
+  <link rel="stylesheet" th:href="@{/editarstyles.css}" />
+
+</head>
+<body>
+<h1>Editar Entidad4</h1>
+<form th:action="@{/entidad4/editar/{id}(id=${entidad4.idEntidad4})}" th:object="${entidad4}" method="post">
+  <label for="detalle">Detalle:</label>
+  <input type="text" id="detalle" th:field="*{detalle}">
+  <br>
+  <button type="submit">Actualizar</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Entidad3</title>
+    <link rel="stylesheet" th:href="@{/crearstyles.css}" />
+
+</head>
+<body>
+<h1>Crear Entidad3</h1>
+<form th:action="@{/entidad3}" th:object="${entidad3}" method="post">
+    <label for="descripcion">Descripción:</label>
+    <input type="text" id="descripcion" th:field="*{descripcion}">
+    <br>
+    <button type="submit">Guardar</button>
+</form>
+</body>
+</html>
